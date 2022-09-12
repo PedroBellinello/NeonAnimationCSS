@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Text</title>
+
+    <style>
+
+         @keyframes lightson{
+            0%, 16%{
+                opacity: 0;
+                text-shadow: 0px 0px 0px #fe1dad, 0px 0px 0px #fe1dad;
+                box-shadow: 0px 0px 0px 0px #fe1dad, 0px 0px 0px 0px #fe1dad, 0px 0px 0px 0px
+                #fe1dad, inset 0px 0px 0px #fe1dad;
+            }
+            3%, 19%{
+                opacity:0.5;
+                text-shadow: 0px 0px 2.5px #fe1dad, 0px 0px 5px #fe1dad, 1px 1px 25px #fe1dad;
+                box-shadow: 0px 0px 5px 0px #fe1dad, 0px 0px 10px 0px #fe1dad, 0px 0px 50px 0px
+                #fe1dad, inset 0px 0px 20px #fe1dad;
+            }
+            6%, 22%{
+                opacity:0;
+                text-shadow: 0px 0px 1px #fe1dad, 0px 0px 2px #fe1dad, 0px 0px 10px #fe1dad;
+                box-shadow: 0px 0px 2px 0px #fe1dad, 0px 0px 5px 0px #fe1dad, 0px 0px 25px 0px
+                #fe1dad, inset 0px 0px 10px #fe1dad;
+            }
+            7%, 23%{
+                opacity:1;
+                text-shadow: 0px 0px 5px #fe1dad, 0px 0px 10px #fe1dad, 1px 1px 50px #fe1dad;
+                box-shadow: 0px 0px 10px 0px #fe1dad, 0px 0px 20px 0px #fe1dad, 0px 0px 100px 0px
+                #fe1dad, inset 0px 0px 30px #fe1dad;
+            }
+            9%, 24%, 100%{
+                opacity:1;
+                text-shadow: 0px 0px 5px #fe1dad, 0px 0px 10px #fe1dad, 1px 1px 50px #fe1dad;
+                box-shadow: 0px 0px 10px 0px #fe1dad, 0px 0px 30px 0px #fe1dad, 0px 0px 100px 0px
+                #fe1dad, inset 0px 0px 30px #fe1dad;
+            }
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+            text-align: center;
+            display: block;
+        }
+        .wrapper{
+            width: 90%;
+            padding: 5rem;
+            gap: 0.2rem;
+            color: white;
+            position: absolute;
+            transform: translate(50%, 50%);
+        }
+
+        .blackpink{
+            position: absolute;
+            font-size: 7rem;
+            font-weight: 500;
+            letter-spacing: 8px;
+            padding: 0rem 2rem;
+            border: 10px solid white;
+            text-align: center;
+            opacity: 0;
+            border-radius: 5px;
+            animation: lightson 3.5s infinite;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="blackpink">
+            TH<span>E/</span>M<span>O</span>X
+        </div>
+    </div>
+    
+</body>
+</html>
